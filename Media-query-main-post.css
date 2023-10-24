@@ -1,0 +1,122 @@
+@media screen and (max-width: 1300px) {
+    .search-box {
+        display: none;
+    }
+
+    .search-box-responsive {
+        display: flex;
+        margin-left: 10px;
+    }
+
+    .search-box-responsive img {
+        width: 20px;
+    }
+
+    .navbar-certer-li-flex-responsive {
+        display: none;
+    }
+
+    .navbar-center ul {
+        display: flex;
+        flex-direction: row;
+        margin-left: -125px;
+    }
+
+    .navbar-center ul li {
+        padding: 0 20px;
+    }
+
+    .online-notification {
+        position: absolute;
+        left: 49.3%;
+        top: 7px;
+        font-size: 13px;
+        z-index: 100;
+        background-color: #d70404;
+        border-radius: 6px;
+        color: #ffffff;
+    }
+
+    .navbar-center-onlie-me-arrow {
+        display: none;
+    }
+
+    .navbar-right-down {
+        display: none;
+    }
+
+    .right-sidebar {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 905px) {
+    
+    .navbar-right-bussines-primium {
+        display: flex;
+        /* border: 1px solid black; */
+        margin-right: 5px;
+    }
+
+    .left-sidebar {
+        flex-basis: 90%;
+        align-self: flex-start;
+        /* position: sticky; */
+        top: 73px;
+        margin-left: 55px;
+    }
+
+
+    .sidebar-profile-info img {
+        width: 80px;
+        border: 1px solid black;
+        border-radius: 50%;
+        background: #fff;
+        padding: 4px;
+        margin-top: -45px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      
+    }
+
+    .main-content {
+        flex-basis: 90%;
+        margin-left: 55px;
+        /* z-index: 100; */
+        width: 0;
+    
+    }
+
+  
+
+
+}
+
+@media screen and (max-width: 400px){
+
+    .navbar-left {
+        display: flex;
+        align-items: center;
+        margin-left: 3px;
+    }
+    .navbar-center{
+        display: none;
+    }
+   
+    .post-activity {
+        flex-wrap: wrap;
+        height: 30vh;
+    }
+    
+}
+@media screen and (max-width: 700px){
+    .message{
+        display: none;
+    }
+}
