@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linkedin clone</title>
+    <link rel="stylesheet" href="style-main-post.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <!-- ------navbar left start-------navbar logo--------------- -->
+        <div class="navbar-left">
+            <a href="main-post.html" class="logo"><img src="../images/logo.png"></a>
+            <div class="search-box">
+                <img src="../images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <!-- -------------navbar-left End----------- ------>
+
+        <!-- -------------navbar-center start----------- -->
+        <div class="navbar-center">
+            <ul>
+                <li class="navbar-center-li-flex">
+                    <div class="online-home"></div>
+                    <a href="main-post.html" class="active-link">
+                        <img src="../images/home.png">
+                    </a>
+                    <a href="main-post.html">
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li class="navbar-center-li-flex">
+                    <a href="#">
+                        <img src="../images/network.png">
+                    </a>
+                    <a href="#">
+                        <p>My Network</p>
+                    </a>
+                </li>
+                <li class="navbar-center-li-flex">
+                    <a href="#">
+                        <img src="../images/jobs.png">
+                    </a>
+                    <a href="#">
+                        <p>Jobs</p>
+                    </a>
+                </li>
+                <li class="navbar-center-li-flex">
+                    <a href="#">
+                        <img src="../images/message.png">
+                    </a>
+                    <a href="#">
+                        <p>Messaging</p>
+                    </a>
+                </li>
+                <li class="navbar-center-li-flex">
+                    <div class="online-notification">15</div>
+                    <a href="#">
+                        <img src="../images/notification.png">
+                    </a>
+                    <a href="#">
+                        <p>Notifications</p>
+                    </a>
+                </li>
+            </ul>
+            <!-- -----------------togglemenu------------------------ -->
+            <div class="navbar-center-onlie">
+                <img src="../imgaes1/Profile image.png" class="nav-profile-img" onclick="toggleMenu()">
+                <div class="navbar-center-onlie-me-arrow">
+                    <span onclick="toggleMenu()">Me</span>
+                    <img src="../images/down-arrow.png" onclick="toggleMenu()">
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------profile-drop-down-menu---------------------------->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="../imgaes1/Profile image.png">
+                    <div>
+                        <h3>Yash Sharma</h3>
+                        <a href="profile-user.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="../images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="../images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="../images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="../images/display.png">
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="index.html" class="profile-menu-link">
+                    <img src="../images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+        <!-- -----------navbar-center End--------------- -->
+
+        <!-- ----------right-navbar-start-------------- -->
+        <div class="navbar-right">
+            <div class="navbar-right-bussines-primium">
+                <div class="navbar-right-bussines">
+                    <div class="navbar-right-bussines-up">
+                        <a href="#"><img src="../imgaes1/for-bussines.jpg"></a>
+                    </div>
+                    <div class="navbar-right-down">
+                        <a href="#"><span>For Bussiness</span>
+                            <img src="../images/down-arrow.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-right-primium">
+                    <a href="#">
+                        <p><u>Get hired faster.</u></p>
+                        <p><u>Try Primium free.</u></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- --------navbar-right End------------ -->
+    </nav>
+    <!-- ----------navbar End------------ -->
+
+    <!-- -------------------------------container start----------------------------- -->
+
+    <div class="container">
+        <!-- -----------left-sidebar------------ -->
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="../imgaes1/background.jpg" width="100%">
+                <div class="sidebar-profile-info">
+                    <a href="profile-user.html">
+                        <img src="../imgaes1/Profile image.png">
+                        <h1>Yash Sharma</h1>
+                        <h3>Full Stack Developer</h3>
+                    </a>
+                    <ul>
+                        <a href="">
+                            <li>Who's viewed your profile <span>52</span></li>
+                            <li>Impressions of your post <span>581</span></li>
+                            <!-- <li>Your connections<span>205</span></li> -->
+                        </a>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#" class="sidebar-profile-link-frist-chiled">
+                        <p>Access exlusive tolls & insights</p>
+                        <div>
+                            <img src="../images/premium.png">
+                            <span><u>Get hired faster. Try Premium free.</u></span>
+                        </div>
+                    </a>
+                    <a href="#"><img src="../images/items.png"><span>My Items</span></a>
+                </div>
+            </div>
+            <div class="sidebar-activity">
+                <h3>RECENT</h3>
+                <div class="sidebar-activity-recent-grout-hastag">
+                    <a href="#"><img src="../images/recent.png" alt=" ">Web Development</a>
+                    <a href="#"><img src="../images/recent.png" alt=" ">User Interface</a>
+                    <a href="#"><img src="../images/recent.png" alt=" ">LearnOnline</a>
+                    <a href="#"><img src="../images/recent.png" alt=" ">Code Better</a>
+                    <a href="#"><img src="../images/recent.png" alt=" ">Group Learnling</a>
+                </div>
+                <h3>GROUP</h3>
+                <div class="sidebar-activity-recent-grout-hastag">
+                    <a href="#"><img src="../images/group.png" alt=" ">Web Desing Group</a>
+                    <a href="#"><img src="../images/group.png" alt=" ">HTML & CSS Learners</a>
+                    <a href="#"><img src="../images/group.png" alt=" ">JavaScrpt & Node's Group</a>
+                    <a href="#"><img src="../images/group.png" alt=" ">Learn Coding Online</a>
+                </div>
+                <h3>HASHTAG</h3>
+                <div class="sidebar-activity-recent-grout-hastag">
+                    <a href="#"><img src="../images/hashtag.png" alt=" ">Webdevelopment</a>
+                    <a href="#"><img src="../images/hashtag.png" alt=" ">Userinterface</a>
+                    <a href="#"><img src="../images/hashtag.png" alt=" ">Onlinelearing</a>
+                </div>
+                <div class="discover-more-link">
+                    <a href="#">Discover more</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- --------main-content----------- -->
+
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="../imgaes1/Profile image.png">
+                    <textarea id="comment"  rows="2" placeholder="Start a post"></textarea>
+                </div>
+
+                <div class="create-post-links">
+                    <li><a href=""><img src="../images/photo.png">Photo</a></li>
+                    <li><a href=""><img src="../images/video.png">Video</a></li>
+                    <li><a href=""><img src="../images/event.png">Event</a></li>
+                    <li><a href="" id="writeArticle"><img src="../images/write-article-logo.jpg">Write article</a></li>
+                </div>
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span>top <img src="../images/down-arrow.png"></span></p>
+            </div>
+            <div class="post">
+                <div class="post-middot">
+                    <a href="">&middot;&middot;&middot;</a>
+                    <a href="">&Cross;</a>
+                </div>
+                <div class="post-author">
+                    <a href=""><img src="../imgaes1/myntra logo.jpg"></a>
+                    <div>
+                        <a href="">
+                            <h1>Myntra Fashion</h1>
+                        </a>
+                        <small>CEO at Myntra Group | Fashion</small>
+                        <small>45 minute ago</small>
+                    </div>
+                </div>
+                <p>The success of every websites depends on search engine.</p>
+                <img src="../imgaes1/Demo post image.jpg" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="../images/thumbsup.png">
+                        <img src="../images/love.png">
+                        <img src="../images/clap.png">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot;40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <img src="../images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------post-------------------- -->
+            <div class="post">
+                <div class="post-middot">
+                    <a href="">&middot;&middot;&middot;</a>
+                    <a href="">&Cross;</a>
+                </div>
+                <div class="post-author">
+                    <a href=""><img src="../imgaes1/Profile logo of yash.jpg"></a>
+                    <div>
+                        <a href="">
+                            <h1>Yash Sharma</h1>
+                        </a>
+                        <small>10 million Followers</small>
+                        <small>2 hour ago</small>
+                    </div>
+                </div>
+                <p>Published new video on CSS Property Box model. This video will run through few more properties that
+                    make up the box-model, Margin, Border, Padding Content-Height & Width.</p>
+                <video width="100%" controls autoplay>
+                    <source src="../imgaes1/Demo post video.mp4">
+                </video>
+                <div class="post-stats">
+                    <div>
+                        <img src="../images/thumbsup.png">
+                        <img src="../images/love.png">
+                        <img src="../images/clap.png">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot;40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <img src="../imgaes1/Like.svg">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-middot">
+                    <a href="">&middot;&middot;&middot;</a>
+                    <a href="">&Cross;</a>
+                </div>
+                <div class="post-author">
+                    <a href=""><img src="../images/israr-img.jpg"></a>
+                    <div>
+                        <a href="">
+                            <h1>Mohd Israr</h1>
+                        </a>
+                        <small>HTML| CSS | JavaScrpt | Full Stack Developer</small>
+                        <small>4 hour ago</small>
+                    </div>
+                </div>
+                <p>I created a medical hospital website using HTML, CSS, and that provides users with information about
+                    facilities, doctors list, and others like emergencies. This website is fully responsive with mobile,
+                    tablet and taptop.</p>
+                <video width="100%" controls autoplay>
+                    <source src="../images/project-demo.mp4">
+                </video>
+                <div class="post-stats">
+                    <div>
+                        <img src="../images/thumbsup.png">
+                        <img src="../images/love.png">
+                        <img src="../images/clap.png">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>65 comments &middot;37 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <img src="../imgaes1/Like.svg">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-middot">
+                    <a href="">&middot;&middot;&middot;</a>
+                    <a href="">&Cross;</a>
+                </div>
+                <div class="post-author">
+                    <a href=""><img src="../images/user-4.png"></a>
+                    <div>
+                        <a href="">
+                            <h1>Shairiaar Alam</h1>
+                        </a>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hour ago</small>
+                    </div>
+                </div>
+                <p>The success of every websites depends on search engine.</p>
+                <img src="../images/post-image-2.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="../images/thumbsup.png">
+                        <img src="../images/love.png">
+                        <img src="../images/clap.png">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot;40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <img src="../images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-middot">
+                    <a href="">&middot;&middot;&middot;</a>
+                    <a href="">&Cross;</a>
+                </div>
+                <div class="post-author">
+                    <a href=""> <img src="../images/israr-img.jpg"></a>
+                    <div>
+                        <a href="">
+                            <h1>Mohd Israr</h1>
+                        </a>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hour ago</small>
+                    </div>
+                </div>
+                <p>I created a clone linkedin page with the help of HTML, CSS & JavaScrpt.</p>
+                <video width="100%" controls autoplay>
+                    <source src="../images/linkedin.mp4">
+                </video>
+                <div class="post-stats">
+                    <div>
+                        <img src="../images/thumbsup.png">
+                        <img src="../images/love.png">
+                        <img src="../images/clap.png">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot;40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <img src="../images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="../images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------end main content---------------- -->
+
+        <!-- ----------right-sidebar------------- -->
+        <div class="right-sidebar">
+
+            <div class="sidebar-news">
+                <img src="../images/more.png" class="info-icon">
+                <h3>LinkedIn News</h3>
+                <ul>
+                    <li><a href="#">High demand for skilled manpower</a>
+                        <span>19d ago &middot; 10,943 reader</span>
+                    </li>
+
+                    <li><a href="#">Careers growing horizontally too</a>
+                        <span>8d ago &middot; 20,843 reader</span>
+                    </li>
+
+                    <li><a href="#">Less work visa for US, more for UK</a>
+                        <span>1d ago &middot; 204,244 reader</span>
+                    </li>
+
+                    <li><a href="#">Gautam adani is the world's thired richest</a>
+                        <span>12d ago &middot; 8453 reader</span>
+                    </li>
+
+                    <a href="#" class="read-more-link">Show More</a>
+                </ul>
+            </div>
+
+            <!-- -------------sidebar-ad------------------- -->
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 priciples of web disign</p>
+                <div>
+                    <img src="../imgaes1/Profile image.png">
+                    <img src="../images/mi-logo.png">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-usefull-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Heop Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+            </div>\
+
+            <!-- ---------------copyright---------------------- -->
+            <div class="copyright-msg">
+                <img src="../images/logo.png">
+                <p>LinkedIn &#169; 2023. All right reserved</p>
+            </div>
+        </div>
+
+        <!-- ---------------message-section------------------ -->
+        <div class="message">
+            <div class="online"></div>
+            <div class="message-left">
+                <img src="../imgaes1/Profile image.png">
+                <span>Messaging</span>
+            </div>
+            <div class="message-right">
+                <span>&middot; &middot; &middot;</span>
+                <a href="#"><img src="../imgaes1/messageing logo.jpg"></a>
+                <a href="#"><img src="../imgaes1/messaging uparrow.jpg"></a>
+            </div>
+        </div>
+    </div>
+    <!-- ------------script------------------- -->
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+        function toggleMenu() {
+            profileMenu.classList.toggle("open-menu");
+        }       
+    </script>
+</body>
+</html>

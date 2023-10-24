@@ -646,6 +646,10 @@ a {
     justify-content: center;
     cursor: pointer;
 }
+.create-post-links li a{
+    display: flex;
+    align-items: center;
+}
 
 .create-post-links li img {
     width: 30px;

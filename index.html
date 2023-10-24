@@ -4,545 +4,451 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>linkedin clone</title>
-    <link rel="stylesheet" href="style.index.css">
+    <title>LinkedIn clone</title>
+    <link rel="stylesheet" href="style-login.css">
+    <link rel="stylesheet" href="Media-query-login.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <!-- ------navbar left start-------navbar logo--------------- -->
-        <div class="navbar-left">
-            <a href="index.html" class="logo"><img src="../images/logo.png"></a>
-            <div class="search-box">
-                <img src="../images/search.png">
-                <input type="text" placeholder="Search">
+    <nav id="navigation-bar">
+        <div class="container flex nav-container">
+            <div class="nav-company-logo">
+                <icon>
+                    <a href=""><img src="images/logo-signinpage.jpg"></a>
+                </icon>
             </div>
-        </div>
-        <!-- -------------navbar-left End----------- ------>
-
-        <!-- -------------navbar-center start----------- -->
-        <div class="navbar-center">
-            <ul>
-                <li class="navbar-center-li-flex">
-                    <div class="online-home"></div>
-                    <a href="index.html" class="active-link">
-                        <img src="../images/home.png">
+            <div class="nav-links flex">
+                <div class="list-1 flex">
+                    <a class="link flex" id="link-1" href="#">
+                        <img src="images/nav article logo.svg" width="20px" height="24px">
+                        <span>Articles</span>
                     </a>
-                    <a href="index.html">
-                        <p>Home</p>
+                    <a class="link flex" id="link-2" href="#">
+                        <img src="images/nav people logo.svg" width="20px" height="22px">
+                        <span>People</span>
                     </a>
-                </li>
-                <li class="navbar-center-li-flex">
-                    <a href="#">
-                        <img src="../images/network.png">
+                    <a class="link flex" id="link-3" href="#">
+                        <img src="images/nav learning logo.svg" width="20px" height="24px">
+                        <span>Learning</span>
                     </a>
-                    <a href="#">
-                        <p>My Network</p>
+                    <a class="link flex" id="link-4" href="#">
+                        <img src="images/nav jobs logo.svg" width="18px" height="24px">
+                        <span>Jobs</span>
                     </a>
-                </li>
-                <li class="navbar-center-li-flex">
-                    <a href="#">
-                        <img src="../images/jobs.png">
-                    </a>
-                    <a href="#">
-                        <p>Jobs</p>
-                    </a>
-                </li>
-                <li class="navbar-center-li-flex">
-                    <a href="#">
-                        <img src="../images/message.png">
-                    </a>
-                    <a href="#">
-                        <p>Messaging</p>
-                    </a>
-                </li>
-                <li class="navbar-center-li-flex">
-                    <div class="online-notification">15</div>
-                    <a href="#">
-                        <img src="../images/notification.png">
-                    </a>
-                    <a href="#">
-                        <p>Notifications</p>
-                    </a>
-                </li>
-            </ul>
-            <!-- -----------------togglemenu------------------------ -->
-            <div class="navbar-center-onlie">
-                <img src="../imgaes1/Profile image.png" class="nav-profile-img" onclick="toggleMenu()">
-                <div class="navbar-center-onlie-me-arrow">
-                    <span onclick="toggleMenu()">Me</span>
-                    <img src="../images/down-arrow.png" onclick="toggleMenu()">
+                </div>
+                <div class="list-2 flex">
+                    <a href="#" class="transparent-button" id="link-5">Join now</a>
+                    <a href="#" class="blue-border-button" id="link-6">Sign in</a>
                 </div>
             </div>
         </div>
-        <!-- ----------------------profile-drop-down-menu---------------------------->
-        <div class="profile-menu-wrap" id="profileMenu">
-            <div class="profile-menu">
-                <div class="user-info">
-                    <img src="../imgaes1/Profile image.png">
-                    <div>
-                        <h3>Yash Sharma</h3>
-                        <a href="profile.html">See your profile</a>
-                    </div>
-                </div>
-                <hr>
-                <a href="#" class="profile-menu-link">
-                    <img src="../images/feedback.png">
-                    <p>Give Feedback</p>
-                    <span>></span>
-                </a>
-                <a href="#" class="profile-menu-link">
-                    <img src="../images/setting.png">
-                    <p>Settings & Privacy</p>
-                    <span>></span>
-                </a>
-                <a href="#" class="profile-menu-link">
-                    <img src="../images/help.png">
-                    <p>Help & Support</p>
-                    <span>></span>
-                </a>
-                <a href="#" class="profile-menu-link">
-                    <img src="../images/display.png">
-                    <p>Display & Accessiblity</p>
-                    <span>></span>
-                </a>
-                <a href="#" class="profile-menu-link">
-                    <img src="../images/logout.png">
-                    <p>Logout</p>
-                    <span>></span>
-                </a>
-            </div>
-        </div>
-        <!-- -----------navbar-center End--------------- -->
-
-        <!-- ----------right-navbar-start-------------- -->
-        <div class="navbar-right">
-            <div class="navbar-right-bussines-primium">
-                <div class="navbar-right-bussines">
-                    <div class="navbar-right-bussines-up">
-                        <a href="#"><img src="../imgaes1/for-bussines.jpg"></a>
-                    </div>
-                    <div class="navbar-right-down">
-                        <a href="#"><span>For Bussiness</span>
-                            <img src="../images/down-arrow.png">
-                        </a>
-                    </div>
-                </div>
-                <div class="navbar-right-primium">
-                    <a href="#">
-                        <p><u>Get hired faster.</u></p>
-                        <p><u>Try Primium free.</u></p>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- --------navbar-right End------------ -->
     </nav>
-    <!-- ----------navbar End------------ -->
 
-    <!-- -------------------------------container start----------------------------- -->
-
-    <div class="container">
-        <!-- -----------left-sidebar------------ -->
-        <div class="left-sidebar">
-            <div class="sidebar-profile-box">
-                <img src="../imgaes1/background.jpg" width="100%">
-                <div class="sidebar-profile-info">
-                    <a href="profile.html">
-                        <img src="../imgaes1/Profile image.png">
-                        <h1>Yash Sharma</h1>
-                        <h3>Full Stack Developer</h3>
-                    </a>
-                    <ul>
-                        <a href="">
-                            <li>Who's viewed your profile <span>52</span></li>
-                            <li>Impressions of your post <span>581</span></li>
-                            <!-- <li>Your connections<span>205</span></li> -->
+    <main>
+        <section class="container flex registration-container" id="registration-page">
+            <div class="registration-section flex">
+                <h1>Welcome to your professional community</h1>
+                <!-- --------------form action--------------    -->
+                <form onsubmit="signin(event)">
+                    <div class="input-section">
+                        <div class="email-box">
+                            <label for="email">Email or Phone</label>
+                            <div class="email-input-box flex">
+                                <input type="text" name="email" id="email" required>
+                            </div>
+                        </div>
+                        <div class="password-box">
+                            <div class="password-input-box flex">
+                                <label class="label-password" for="password">Password</label>
+                                <input type="password" name="password" id="password" required>
+                                <a href="show">show</a>
+                            </div>
+                        </div>
+                        <a class="forget-password" href="#">Forget password?</a>
+                    </div>
+                    <div class="button-section">
+                        <input class="blue-button sign-in-btn" type="submit" name="submit" id="submit">
+                        <p class="btn-division-or"><span>or</span></p>
+                        <a href="#" class="grey-border-button flex google-sign-in-btn">
+                            <img src="images/registration google icon.svg" alt="alt">
+                            <span>Sign in with Google</span>
                         </a>
+                        <a href="#" class="grey-border-button new-user-sign-up-btn">New to LinkedIn? Join now</a>
+                    </div>
+                </form>
+                <!--            
+                <form onsubmit="singin(event)">
+                    <label for="email">Email or Phone</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                    <input type="submit" name="submit" id="submit">
+                </form> -->
+
+            </div>
+            <img class="registration-image" src="images/registration hero img.svg" alt="alt">
+
+        </section>
+
+        <section id="ad-1">
+            <div class="container flex ad-1-container">
+                <div class="ad-1-left-section">
+                    <h2>Explore collaborative articles</h2>
+                    <p>We’re unlocking community knowledge in a new way. Experts add insights directly into each
+                        article, started with the help of AI.</p>
+                </div>
+                <div class="ad-1-right-section">
+                    <ul class="ad-1-right-section-list flex">
+                        <li><a href="#btn" class="grey-border-button ad-1-btn">Marketing</a></li>
+                        <li><a href="#btn" class="grey-border-button ad-1-btn">Agriculture</a></li>
+                        <li><a href="#btn" class="grey-border-button ad-1-btn">Public Administration</a></li>
+                        <li><a href="#btn" class="grey-border-button ad-1-btn">Healthcare</a></li>
+                        <li><a href="#btn" class="grey-border-button ad-1-btn">Engineering</a></li>
+                        <li><a href="#btn" class="grey-border-button ad-1-btn">IT Services</a></li>
+                        <li><a href="#btn" class="grey-border-button ad-1-btn">Sustainability</a></li>
+                        <li><a href="#btn" class="grey-border-button ad-1-btn">Business Administration</a></li>
+                        <li><a href="#btn" class="grey-border-button ad-1-btn">Telecommunication</a></li>
+                        <li><a href="#btn" class="blue-border-button ad-1-btn">Show all</a></li>
                     </ul>
                 </div>
-                <div class="sidebar-profile-link">
-                    <a href="#" class="sidebar-profile-link-frist-chiled">
-                        <p>Access exlusive tolls & insights</p>
-                        <div>
-                            <img src="../images/premium.png">
-                            <span><u>Get hired faster. Try Premium free.</u></span>
+            </div>
+        </section>
+
+        <section id="ad-2">
+            <div class="container flex ad-2-container">
+                <div class="ad-2-left-section">
+                    <h2>Find the right job or internship for you</h2>
+                </div>
+                <div class="ad-2-right-section">
+                    <h2>SUGGESTED SEARCHES</h2>
+                    <ul class="ad-2-right-section-list flex">
+                        <li><a href="" class="grey-border-button ad-2-btn">Engineering</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Business Development</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Finance</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Administrative Assistant</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Retail Associate</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Customer Service</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Operations</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Information Technology</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Marketing</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Human Resources</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Healthcare Service</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Sales</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Program and Project Management</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Accounting</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Arts and Design</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Community and Social Services</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Consulting</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Education</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Enterpreneurship</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Legal</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Media and Communications</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Military and Protective Services</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Product Management</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Purchasing</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Quality Assurance</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Real Estate</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Research</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Support</a></li>
+                        <li><a href="" class="grey-border-button ad-2-btn">Administrative</a></li>
+                    </ul>
+                    <button class="show-more-less-btn flex">
+                        <span>Show more</span>
+                        <img src="images/up arrow.svg">
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="ad-3">
+            <div class="container flex ad-3-container">
+                <h2>Post your job for millions of people to see</h2>
+                <a href="#ad-3" class="blue-border-button">Post a Job</a>
+            </div>
+        </section>
+
+        <section id="ad-4">
+            <div class="container ad-4-container flex">
+                <div class="ad-4-left-arrow">
+                    <button class="ad-4-arrow-design ad-4-left-btn flex"><img src="images/left arrow.svg"></button>
+                </div>
+                <div class="ad-4-list-items">
+                    <div class="ad-4-box-1 flex">
+                        <div class="ad-4-box-left-section">
+                            <h2>Let the right people know you’re open to work</h2>
+                            <p>With the Open To Work feature, you can privately tell recruiters or publicly share with
+                                the
+                                LinkedIn community that you are looking for new job opportunities.</p>
                         </div>
-                    </a>
-                    <a href="#"><img src="../images/items.png"><span>My Items</span></a>
+                        <div class="ad-4-box-right-section">
+                            <img src="images/feature 1.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="ad-4-box-2 flex">
+                        <div class="ad-4-box-left-section">
+                            <h2>Conversations today could lead to opportunity tomorrow</h2>
+                            <p>Sending messages to people you know is a great way to strengthen relationships as you
+                                take the next step in your career.</p>
+                        </div>
+                        <div class="ad-4-box-right-section">
+                            <img src="images/feature 1 img2.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="ad-4-box-3 flex">
+                        <div class="ad-4-box-left-section">
+                            <h2>Stay up to date on your industry</h2>
+                            <p>From live videos, to stories, to newsletters and more, LinkedIn is full of ways to stay
+                                up to date on the latest discussions in your industry.</p>
+                        </div>
+                        <div class="ad-4-box-right-section">
+                            <img src="images/feature 1 img3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="ad-4-right-arrow">
+                    <button class="ad-4-arrow-design ad-4-right-btn flex "><img src="images/left arrow.svg"></button>
                 </div>
             </div>
-            <div class="sidebar-activity">
-                <h3>RECENT</h3>
-                <div class="sidebar-activity-recent-grout-hastag">
-                    <a href="#"><img src="../images/recent.png" alt=" ">Web Development</a>
-                    <a href="#"><img src="../images/recent.png" alt=" ">User Interface</a>
-                    <a href="#"><img src="../images/recent.png" alt=" ">LearnOnline</a>
-                    <a href="#"><img src="../images/recent.png" alt=" ">Code Better</a>
-                    <a href="#"><img src="../images/recent.png" alt=" ">Group Learnling</a>
-                </div>
-                <h3>GROUP</h3>
-                <div class="sidebar-activity-recent-grout-hastag">
-                    <a href="#"><img src="../images/group.png" alt=" ">Web Desing Group</a>
-                    <a href="#"><img src="../images/group.png" alt=" ">HTML & CSS Learners</a>
-                    <a href="#"><img src="../images/group.png" alt=" ">JavaScrpt & Node's Group</a>
-                    <a href="#"><img src="../images/group.png" alt=" ">Learn Coding Online</a>
-                </div>
-                <h3>HASHTAG</h3>
-                <div class="sidebar-activity-recent-grout-hastag">
-                    <a href="#"><img src="../images/hashtag.png" alt=" ">Webdevelopment</a>
-                    <a href="#"><img src="../images/hashtag.png" alt=" ">Userinterface</a>
-                    <a href="#"><img src="../images/hashtag.png" alt=" ">Onlinelearing</a>
-                </div>
-                <div class="discover-more-link">
-                    <a href="#">Discover more</a>
-                </div>
-            </div>
-        </div>
+        </section>
 
-        <!-- --------main-content----------- -->
+        <section class="container" id="ad-5">
+            <div class="container flex ad-5-container">
+                <section class="ad-5-main flex">
+                    <div class="ad-5-left-section">
+                        <img src="images/feature 2.svg" alt="">
+                        <div class="ad-5-left-content">
+                            <h2>Connect with people who can help</h2>
+                            <a class="grey-border-button" href="#ad-5">Find people you know</a>
+                        </div>
+                    </div>
+                    <div class="ad-5-right-section">
+                        <img src="images/feature 3.svg">
+                        <div class="ad-5-right-content">
+                            <h2>Learn the skills you need to succeed</h2>
+                            <div class="ad-5-dropdown-list">
+                                <button class="flex" id="ad-5-btn">
+                                    <span class="ad-5-btn-heading">Choose a topic to learn about</span>
+                                    <img class="ad-5-btn-icon" src="images/left arrow.svg">
+                                </button>
+                                <ul class="ad-5-list ad-5-list-hide">
+                                    <li>
+                                        <a href="#ad-5-btn">
+                                            <span class="ad-5-list-heading">Business Analysis and Strategy</span>
+                                            <span class="ad-5-list-description">900+ courses</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#ad-5-btn">
+                                            <span class="ad-5-list-heading">Business Software and Tools</span>
+                                            <span class="ad-5-list-description">1,970+ course</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#ad-5-btn">
+                                            <span class="ad-5-list-heading">Career Development</span>
+                                            <span class="ad-5-list-description">490+ courses</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#ad-5-btn">
+                                            <span class="ad-5-list-heading">Customer Service</span>
+                                            <span class="ad-5-list-description">190+ courses</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#ad-5-btn">
+                                            <span class="ad-5-list-heading">Diversity, Equity, and Inclusion
+                                                (DEI)</span>
+                                            <span class="ad-5-list-description">230+ courses</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#ad-5-btn">
+                                            <span class="ad-5-list-heading">Finance and Accounting</span>
+                                            <span class="ad-5-list-description">280+ courses</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#ad-5-btn">
+                                            <span class="ad-5-list-heading">Human Resources</span>
+                                            <span class="ad-5-list-description">400+ courses</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#ad-5-btn">
+                                            <span class="ad-5-list-heading">Leadership and Management</span>
+                                            <spa class="ad-5-list-description">420+ course</spa>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#ad-5-btn">
+                                            <span class="ad-5-list-heading">Marketing</span>
+                                            <span class="ad-5-list-description">860+ courses</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#ad-5-btn">
+                                            <span class="ad-5-list-heading">professional Development</span>
+                                            <span class="ad-5-list-description">1,430+ course</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#ad-5-btn">
+                                            <span class="ad-5-list-heading">Sales</span>
+                                            <span class="ad-5-list-description">250+ courses</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#ad-5-btn">
+                                            <span class="ad-5-list-heading">Small Business and Enterpreneurship</span>
+                                            <span class="ad-5-list-description">330+ courses</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#ad-5-btn">
+                                            <span class="ad-5-list-heading">Training and Education</span>
+                                            <span class="ad-5-list-description">290+ courses</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
 
-        <div class="main-content">
-            <div class="create-post">
-                <div class="create-post-input">
-                    <img src="../imgaes1/Profile image.png">
-                    <textarea rows="2" placeholder="Start a post"></textarea>
+        <section id="ad-6">
+            <div class="container ad-6-container flex">
+                <div class="ad-6-left-section">
+                    <h2 class="ad-6-heading">Who is LinkedIn for?</h2>
+                    <h3 class="ad-6-description">Anyone looking to navigate their professional life.</h3>
+                    <div class="ad-6-left-btns flex">
+                        <button class="flex">
+                            <span>Find a coworker or classmate</span>
+                            <img src="images/left arrow.svg">
+                        </button>
+                        <button class="flex">
+                            <span>Find a new job</span>
+                            <img src="images/left arrow.svg">
+                        </button>
+                        <button class="flex">
+                            <span>Find a course or training</span>
+                            <img src="images/left arrow.svg">
+                        </button>
+                    </div>
                 </div>
+                <img class="ad-6-right-section-img" width="840px" height="840px" src="images/feature 4.jpg">
 
-                <div class="create-post-links">
-                    <li><img src="../images/photo.png">Photo</li>
-                    <li><img src="../images/video.png">Video</li>
-                    <li><img src="../images/event.png">Event</li>
-                    <li><img src="../images/write-article-logo.jpg">Write article</li>
-                </div>
             </div>
-            <div class="sort-by">
-                <hr>
-                <p>Sort by: <span>top <img src="../images/down-arrow.png"></span></p>
-            </div>
-            <div class="post">
-                <div class="post-middot">
-                    <a href="">&middot;&middot;&middot;</a>
-                    <a href="">&Cross;</a>
-                </div>
-                <div class="post-author">
-                    <a href=""><img src="../imgaes1/myntra logo.jpg"></a>
-                    <div>
-                        <a href="">
-                            <h1>Myntra Fashion</h1>
-                        </a>
-                        <small>CEO at Myntra Group | Fashion</small>
-                        <small>45 minute ago</small>
-                    </div>
-                </div>
-                <p>The success of every websites depends on search engine.</p>
-                <img src="../imgaes1/Demo post image.jpg" width="100%">
-                <div class="post-stats">
-                    <div>
-                        <img src="../images/thumbsup.png">
-                        <img src="../images/love.png">
-                        <img src="../images/clap.png">
-                        <span class="liked-users">Abhinav Mishra and 75 others</span>
-                    </div>
-                    <div>
-                        <span>22 comments &middot;40 shares</span>
-                    </div>
-                </div>
-                <div class="post-activity">
-                    <div class="post-activity-link">
-                        <img src="../images/like.png">
-                        <span>Like</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="../images/comment.png">
-                        <span>Comment</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="../images/share.png">
-                        <span>Share</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="../images/send.png">
-                        <span>Send</span>
-                    </div>
-                </div>
-            </div>
-            <!-- ----------------------post-------------------- -->
-            <div class="post">
-                <div class="post-middot">
-                    <a href="">&middot;&middot;&middot;</a>
-                    <a href="">&Cross;</a>
-                </div>
-                <div class="post-author">
-                    <a href=""><img src="../imgaes1/Profile logo of yash.jpg"></a>
-                    <div>
-                        <a href="">
-                            <h1>Yash Sharma</h1>
-                        </a>
-                        <small>10 million Followers</small>
-                        <small>2 hour ago</small>
-                    </div>
-                </div>
-                <p>Published new video on CSS Property Box model. This video will run through few more properties that
-                    make up the box-model, Margin, Border, Padding Content-Height & Width.</p>
-                <video width="100%" controls autoplay>
-                    <source src="../imgaes1/Demo post video.mp4">
-                </video>
-                <div class="post-stats">
-                    <div>
-                        <img src="../images/thumbsup.png">
-                        <img src="../images/love.png">
-                        <img src="../images/clap.png">
-                        <span class="liked-users">Abhinav Mishra and 75 others</span>
-                    </div>
-                    <div>
-                        <span>22 comments &middot;40 shares</span>
-                    </div>
-                </div>
-                <div class="post-activity">
-                    <div class="post-activity-link">
-                        <img src="../imgaes1/Like.svg">
-                        <span>Like</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="../images/comment.png">
-                        <span>Comment</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="../images/share.png">
-                        <span>Share</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="../images/send.png">
-                        <span>Send</span>
-                    </div>
-                </div>
-            </div>
-            <div class="post">
-                <div class="post-middot">
-                    <a href="">&middot;&middot;&middot;</a>
-                    <a href="">&Cross;</a>
-                </div>
-                <div class="post-author">
-                    <a href=""><img src="../images/israr-img.jpg"></a>
-                    <div>
-                        <a href="">
-                            <h1>Mohd Israr</h1>
-                        </a>
-                        <small>HTML| CSS | JavaScrpt | Full Stack Developer</small>
-                        <small>4 hour ago</small>
-                    </div>
-                </div>
-                <p>I created a medical hospital website using HTML, CSS, and that provides users with information about
-                    facilities, doctors list, and others like emergencies. This website is fully responsive with mobile,
-                    tablet and taptop.</p>
-                <video width="100%" controls autoplay>
-                    <source src="../images/project-demo.mp4">
-                </video>
-                <div class="post-stats">
-                    <div>
-                        <img src="../images/thumbsup.png">
-                        <img src="../images/love.png">
-                        <img src="../images/clap.png">
-                        <span class="liked-users">Abhinav Mishra and 75 others</span>
-                    </div>
-                    <div>
-                        <span>65 comments &middot;37 shares</span>
-                    </div>
-                </div>
-                <div class="post-activity">
-                    <div class="post-activity-link">
-                        <img src="../imgaes1/Like.svg">
-                        <span>Like</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="../images/comment.png">
-                        <span>Comment</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="../images/share.png">
-                        <span>Share</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="../images/send.png">
-                        <span>Send</span>
-                    </div>
-                </div>
-            </div>
-            <div class="post">
-                <div class="post-middot">
-                    <a href="">&middot;&middot;&middot;</a>
-                    <a href="">&Cross;</a>
-                </div>
-                <div class="post-author">
-                    <a href=""><img src="../images/user-4.png"></a>
-                    <div>
-                        <a href="">
-                            <h1>Shairiaar Alam</h1>
-                        </a>
-                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
-                        <small>2 hour ago</small>
-                    </div>
-                </div>
-                <p>The success of every websites depends on search engine.</p>
-                <img src="../images/post-image-2.png" width="100%">
-                <div class="post-stats">
-                    <div>
-                        <img src="../images/thumbsup.png">
-                        <img src="../images/love.png">
-                        <img src="../images/clap.png">
-                        <span class="liked-users">Abhinav Mishra and 75 others</span>
-                    </div>
-                    <div>
-                        <span>22 comments &middot;40 shares</span>
-                    </div>
-                </div>
-                <div class="post-activity">
-                    <div class="post-activity-link">
-                        <img src="../images/like.png">
-                        <span>Like</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="../images/comment.png">
-                        <span>Comment</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="../images/share.png">
-                        <span>Share</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="../images/send.png">
-                        <span>Send</span>
-                    </div>
-                </div>
-            </div>
-            <div class="post">
-                <div class="post-middot">
-                    <a href="">&middot;&middot;&middot;</a>
-                    <a href="">&Cross;</a>
-                </div>
-                <div class="post-author">
-                    <a href=""> <img src="../images/israr-img.jpg"></a>
-                    <div>
-                        <a href="">
-                            <h1>Mohd Israr</h1>
-                        </a>
-                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
-                        <small>2 hour ago</small>
-                    </div>
-                </div>
-                <p>I created a clone linkedin page with the help of HTML, CSS & JavaScrpt.</p>
-                <video width="100%" controls autoplay>
-                    <source src="../images/linkedin.mp4">
-                </video>
-                <div class="post-stats">
-                    <div>
-                        <img src="../images/thumbsup.png">
-                        <img src="../images/love.png">
-                        <img src="../images/clap.png">
-                        <span class="liked-users">Abhinav Mishra and 75 others</span>
-                    </div>
-                    <div>
-                        <span>22 comments &middot;40 shares</span>
-                    </div>
-                </div>
-                <div class="post-activity">
-                    <div class="post-activity-link">
-                        <img src="../images/like.png">
-                        <span>Like</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="../images/comment.png">
-                        <span>Comment</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="../images/share.png">
-                        <span>Share</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="../images/send.png">
-                        <span>Send</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ----------------end main content---------------- -->
+        </section>
 
-        <!-- ----------right-sidebar------------- -->
-        <div class="right-sidebar">
-
-            <div class="sidebar-news">
-                <img src="../images/more.png" class="info-icon">
-                <h3>LinkedIn News</h3>
-                <ul>
-                    <li><a href="#">High demand for skilled manpower</a>
-                        <span>19d ago &middot; 10,943 reader</span>
+        <section id="ad-7">
+            <div class="container flex ad-7-container">
+                <div class="ad-7-left-section">
+                    <iframe src="https://www.youtube.com/embed/IlYUUN8rL_Y" frameborder="0"></iframe>
+                </div>
+                <div class="ad-7-right-section">
+                    <h2 class="ad-7-heading">In it to chase my dream</h2>
+                    <h3 class="ad-7-description">Check out Gayatri’s story of finding a new job on LinkedIn</h3>
+                </div>
+            </div>
+        </section>
+        <section id="ad-8">
+            <div class="container ad-8-container">
+                <h2 class="ad-8-heading">Join your colleagues, classmates, and friends on LinkedIn.</h2>
+                <button class="blue-button ad-8-btn">Get Started</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="footer-1">
+            <div class="container flex footer-1-container">
+                <div id="f1-icon">
+                    <icon class="footer-1-icon">
+                        <a href=""><img src="images/logo-linkedin-Ad-8.jpg" width="100px"></a>
+                    </icon>
+                </div>
+                <div id="footer-list-1">
+                    <h3 class="footer-list-heading">General</h3>
+                    <ul class="footer-list flex">
+                        <li><a href="#f">Sign Up</a></li>
+                        <li><a href="#f">Help Center</a></li>
+                        <li><a href="#f">About</a></li>
+                        <li><a href="#f">Press</a></li>
+                        <li><a href="#f">Blog</a></li>
+                        <li><a href="#f">Careers</a></li>
+                        <li><a href="#f">Developers</a></li>
+                    </ul>
+                </div>
+                <div id="footer-list-2">
+                    <h3 class="footer-list-heading">Browse LinkedIn</h3>
+                    <ul class="footer-list flex">
+                        <li><a href="#g">Learning</a></li>
+                        <li><a href="#g">Jobs</a></li>
+                        <li><a href="#g">Salary</a></li>
+                        <li><a href="#g">Mobile</a></li>
+                        <li><a href="#g">Services</a></li>
+                        <li><a href="#g">Products</a></li>
+                    </ul>
+                </div>
+                <div id="footer-list-3">
+                    <h3 class="footer-list-heading">Business Solutions</h3>
+                    <ul class="footer-list flex">
+                        <li><a href="#r">Talent</a></li>
+                        <li><a href="#r">Marketing</a></li>
+                        <li><a href="#r">Sales</a></li>
+                        <li><a href="#r">Learning</a></li>
+                    </ul>
+                </div>
+                <div id="footer-list-4">
+                    <h3 class="footer-list-heading">Directories</h3>
+                    <ul class="footer-list flex">
+                        <li><a href="#d">Members</a></li>
+                        <li><a href="#d">Jobs</a></li>
+                        <li><a href="#d">Companies</a></li>
+                        <li><a href="#d">Featured</a></li>
+                        <li><a href="#d">Learning</a></li>
+                        <li><a href="#d">Posts</a></li>
+                        <li><a href="#d">Articles</a></li>
+                        <li><a href="#d">Schools</a></li>
+                        <li><a href="#d">News</a></li>
+                        <li><a href="#d">News Letters</a></li>
+                        <li><a href="#d">Services</a></li>
+                        <li><a href="#d">Products</a></li>
+                        <li><a href="#d">Advice</a></li>
+                        <li><a href="#d">People Search</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="footer-2">
+            <div class="container footer-2-container">
+                <ul class="footer-2-list flex">
+                    <li class="f2-icon flex">
+                        <icon class="footer-2-icon">
+                            <img src="images/logo-linkedin-footer-2.jpg" alt="">
+                        </icon>
+                        <span>© 2023</span>
                     </li>
-
-                    <li><a href="#">Careers growing horizontally too</a>
-                        <span>8d ago &middot; 20,843 reader</span>
-                    </li>
-
-                    <li><a href="#">Less work visa for US, more for UK</a>
-                        <span>1d ago &middot; 204,244 reader</span>
-                    </li>
-
-                    <li><a href="#">Gautam adani is the world's thired richest</a>
-                        <span>12d ago &middot; 8453 reader</span>
-                    </li>
-
-                    <a href="#" class="read-more-link">Show More</a>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Accessibilty</a></li>
+                    <li><a href="">User Agreement</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Cookie Policy</a></li>
+                    <li><a href="">Copyright Policy</a></li>
+                    <li><a href="">Brand Policy</a></li>
+                    <li><a href="">Guest Controls</a></li>
+                    <li><a href="">Community Guidelines</a></li>
+                    <li><a href="">Language</a></li>
                 </ul>
             </div>
+        </section>
+    </footer>
 
-            <!-- -------------sidebar-ad------------------- -->
-            <div class="sidebar-ad">
-                <small>Ad &middot; &middot; &middot;</small>
-                <p>Master the 5 priciples of web disign</p>
-                <div>
-                    <img src="../imgaes1/Profile image.png">
-                    <img src="../images/mi-logo.png">
-                </div>
-                <b>Brand and Demand in Xiaomi</b>
-                <a href="#" class="ad-link">Learn More</a>
-            </div>
 
-            <div class="sidebar-usefull-links">
-                <a href="#">About</a>
-                <a href="#">Accessibility</a>
-                <a href="#">Heop Center</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Get the App</a>
-                <a href="#">More</a>
-            </div>\
-
-            <!-- ---------------copyright---------------------- -->
-            <div class="copyright-msg">
-                <img src="../images/logo.png">
-                <p>LinkedIn &#169; 2023. All right reserved</p>
-            </div>
-        </div>
-
-        <!-- ---------------message-section------------------ -->
-        <div class="message">
-            <div class="online"></div>
-            <div class="message-left">
-                <img src="../imgaes1/Profile image.png">
-                <span>Messaging</span>
-            </div>
-            <div class="message-right">
-                <span>&middot; &middot; &middot;</span>
-                <a href="#"><img src="../imgaes1/messageing logo.jpg"></a>
-                <a href="#"><img src="../imgaes1/messaging uparrow.jpg"></a>
-            </div>
-        </div>
-    </div>
-    <!-- ------------script------------------- -->
-    <script>
-        let profileMenu = document.getElementById("profileMenu");
-        function toggleMenu() {
-            profileMenu.classList.toggle("open-menu");
-        }
-    </script>
+    <script src="script-index.js"></script>
 </body>
+
 </html>
